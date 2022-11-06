@@ -1,0 +1,137 @@
+html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 15px;
+    background-color: #090b1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
+    background-color: #1b1938;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-main-container{
+    height: 100%;
+    padding: 20px 20px 20px 20px;
+}
+
+.heading-container h1{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1.8rem;
+}
+
+.main-paragraph{
+    color: rgba(255,255,255, 0.75);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding: 0px 20px 20px 20px;
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+.target{
+    color: #aa5cdb;
+}
+
+.stats{
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.companies h2, p, .templates h2, p, .queries h2, p{
+    margin: 0;
+    padding: 20px 0px 0px 0px;
+}
+
+.companies h2, .templates h2, .queries h2{
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.queries h2{
+    text-transform: uppercase;
+}
+
+.companies p, .templates p, .queries p{
+    text-transform: uppercase;
+    color: rgba(255,255,255, 0.6);
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.overlay-container{
+    display: flex;
+    background: rgba(170, 92, 219, 1);
+}
+
+img{
+    opacity: 0.5;
+    filter: contrast(1.5);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 576px){
+    /* This block allows you to center a div container. */
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .main-container, .stats{
+        display: flex;
+        flex-direction: row;
+    }
+    .main-container{
+        background-color: #1b1938;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 750px;
+        height: 350px;
+        text-align: left;
+    }
+
+    .left-main-container{
+        width: 70%;
+        padding-bottom: 30px;
+    }
+
+    .stats{
+        color: white;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .companies h2, p, .templates h2, p, .queries h2, p{
+        margin: 0;
+        padding-right: 20px; /* Padding-right adds space to each container */
+    }
+
+    .paragraph-container{
+        inline-size: 340px;
+    }
+}
